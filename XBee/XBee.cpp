@@ -766,7 +766,11 @@ XBee::XBee(): _response(XBeeResponse()) {
 	_response.init();
 	_response.setFrameData(_responseFrameData);
 	// default
+#if defined(USBCON)
+	_serial = &Serial1;
+#else
 	_serial = &Serial;
+#endif
 }
 
 uint8_t XBee::getNextFrameId() {
