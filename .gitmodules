@@ -7,3 +7,9 @@
 [submodule "TinyGPS"]
 	path = TinyGPS
 	url = git@github.com:KevWal/TinyGPS.git
+[submodule "xbee-arduino"]
+	path = xbee-arduino
+	url = git@github.com:tmitchell/xbee-arduino.git
+[submodule "XBee"]
+	path = XBee
+	url = git@github.com:tmitchell/xbee-arduino.git
